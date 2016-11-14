@@ -1,0 +1,114 @@
+@import url(https://fonts.googleapis.com/css?family=Vollkorn:400,200,300,200italic,300italic,600,400italic,600italic,700,700italic,900,900italic);
+
+@font-face {
+  src: url('./fonts/Oregon.otf');
+  font-family: 'Oregon';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height:100%;
+    width: 100%;
+    background-color: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: Vollkorn, sans-serif;
+    line-height: 0;
+    text-align: center;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+img {
+    width: auto;
+    height: auto;
+}
+
+p {
+  line-height: 1.6;
+  font-size: 23px;
+  max-width: 800px;
+  text-align: justify;
+  margin: auto;
+}
+
+#ctr {
+  height: 100%;
+  width: 100%;
+}
+
+.sec div {
+  width: 100%;
+}
+
+.centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#top, .text {
+  background-image: url(./imgs/title-bg.png);
+  background-size: cover;
+  background-position: 0 65%;
+}
+
+#top {
+  height: 100vh;
+}
+
+.text {
+  text-align: center;
+  padding: 100px 0 120px 0;
+  overflow: hidden;
+}
+
+.h1, #title-img {
+  width: auto;
+}
+
+.h1 {
+  height: 100px;
+  margin-bottom: 40px;
+}
+
+#title-img {
+  height: 150px;
+  margin-top: calc(50vh - 75px);
+}
+
+.bodyimg {
+  width: 100vw;
+  height: auto;
+}
+
+@media screen and (max-width: 800px) {
+ p {
+   width: 80vw;
+   font-size: 16px;
+ }
+ .h1 {
+    height: 70px;
+ }
+ #title-img {
+   height: 90px;
+   margin-top: calc(50vh - 45px);
+ }
+ .text {
+   padding: 50px 0 60px 0;
+ }
+}
